@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-PROJECT | SMIT</title>
+    <style>
+        .hea {
+            text-align: center;
+        }
+
+        .hea a {
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            background-color: #f1f1f1;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .hea a:hover {
+            color: #ffffffcc;
+            background-color: #FFA500;
+        }
+
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .dark-mode .first-div {
+            background-color: #555;
+            color: #fff;
+        }
+
+        .dark-mode .first-div .heading h1 {
+            color: #fff;
+        }
+
+        .dark-mode .btn {
+            background-color: #FF8C00;
+            color: #fff;
+        }
+
+        .light-mode {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        .light-mode .first-div {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        .light-mode .first-div .heading h1 {
+            color: #333;
+        }
+
+        .light-mode .btn {
+            background-color: #FF8C00;
+            color: #fff;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 300px;
+            margin-top: 150px;
+        }
+
+        .first-div {
+            padding: 10px;
+            border-radius: 5px;
+            width: 350px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .first-div img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .first-div .heading {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .first-div .heading h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        /* button */
+
+        .btn-toggle{
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #000000;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        .btn-toggle:hover {
+            background-color: #2c2727;
+            color: #FF8C00  ;
+        }
+
+        .btn-toggle i {
+            margin-left: 5px;
+        }
+
+        .btn-toggle a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background-color: #FFA500;
+        }
+
+        .btn i {
+            margin-left: 5px;
+        }
+
+        .btn a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Existing CSS rules */
+
+        .first-div img {
+            width: 100%;
+            height: 200px;
+            display: block;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+    <h1 class="hea"> <a href="https://lnkd.in/dntVaW3B" target="_blank"> SHAKIR BARKATI </a></h1>
+    <div>
+        <button class="btn-toggle" onclick="toggleTheme()"> Dark / light</button>
+    </div>
+    <div class="container">
+        <div class="first-div">
+            <img src="ai-face-detector-image.jpg" alt="Image" width="100%" height="50%">
+            <br />
+            <div class="heading">
+                <h1>AI-FACE DETECTOR</h1>
+            </div>
+            <button class="btn"> <a href="face.html"> Click <i class="fa fa-duotone fa-forward fa-2xs"
+                        style="--fa-primary-color: #FF8C00; --fa-secondary-color: #000080;"></i></a>
+            </button>
+        </div>
+        <div class="first-div">
+            <div class="first-div">
+                <img src="ai-pose-detector-image.jpg" alt="Image">
+                <br />
+                <div class="heading">
+                    <h1>AI-POSE DETECTOR</h1>
+                </div>
+                <button class="btn"> <a href="pose.html"> Click <i class="fa fa-duotone fa-forward fa-2xs"
+                            style="--fa-primary-color: #FF8C00; --fa-secondary-color: #000080;"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="first-div">
+            <div class="first-div">
+                <img src="ai-sound-detector-image.jpg" alt="Image" width="100%" height="50%">
+                <br />
+                <div class="heading">
+                    <h1>AI-SOUND DETECTOR</h1>
+                </div>
+                <button class="btn"> <a href="sound.html"> Click <i class="fa fa-duotone fa-forward fa-2xs"
+                            style="--fa-primary-color: #FF8C00; --fa-secondary-color: #000080;"></i></a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/01091b0b70.js" crossorigin="anonymous"></script>
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode");
+        }
+    </script>
+</body>
+
+</html>
